@@ -1,0 +1,9 @@
+<title>Trouvaille | Verification</title>
+<h1>Two Factor Authentication</h1>
+<h3>Verification Code sent to {{mail}}.</h3>
+<form action='verification/auth' method='post'>
+    {% csrf_token %}
+    Enter Verification Code : <input type='text' name='OTP' placeholder='Enter OTP'>
+    <input type="submit" value="Submit">
+</form>
+

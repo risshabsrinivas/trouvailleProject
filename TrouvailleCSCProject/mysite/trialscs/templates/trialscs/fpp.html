@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Select your preferred payment method">
+    <meta name="description" content="">
+    <title>Flights Payment Page {{fare}}</title>
+        {% load static %} <link rel="stylesheet" href=" {% static '/trialscs/fpp.css' %}" media="screen">
+      {% load static %} <link rel="stylesheet" href=" {% static '/trialscs/nicepage1.css' %}" media="screen">
+
+    {% load static%} <script class="u-script" type="text/javascript" src="{% static '/trialscs/jquery-1.9.1.min.js'%}" defer=""></script>
+   {% load static%} <script class="u-script" type="text/javascript" src="{% static '/trialscs/nicepage.js'%}" defer=""></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Flights Payment Page">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode">
+    <section class="u-clearfix u-image u-section-1" id="sec-d21b" data-image-width="1280" data-image-height="853">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-body-alt-color u-text-default u-text-1">Select your preferred payment method</h2>
+        <p class="u-text u-text-body-alt-color u-text-default u-text-2">Debit <span style="font-weight: 700;"></span>/ Credit Cards
+        </p><span class="u-file-icon u-icon u-icon-1">{% load static %}<img src="{% static '/trialscs/images/217445.png' %}" alt=""></span><span class="u-file-icon u-icon u-icon-2">{% load static %}<img src="{% static '/trialscs/images/217425.png' %}" alt=""></span><span class="u-file-icon u-icon u-icon-3">{% load static %}<img src="{% static '/trialscs/images/825539.png' %}" alt=""></span><span class="u-file-icon u-icon u-icon-4">{% load static %}<img src="{% static '/trialscs/images/825484.png' %}" alt=""></span><span class="u-file-icon u-icon u-icon-5">{% load static %}<img src="{% static '/trialscs/images/217422.png' %}" alt=""></span>
+        <p class="u-text u-text-body-alt-color u-text-default u-text-3">More payment methods</p><span class="u-file-icon u-icon u-icon-6">{% load static %}<img src="{% static '/trialscs/images/825454.png' %}" alt=""></span><span class="u-file-icon u-grey-10 u-icon u-icon-7">{% load static %}<img src="{% static '/trialscs/images/30.png' %}" alt=""></span>
+        <div class="u-form u-form-1">
+          <form action="payment/confirmation" method="POST"  style="padding: 15px" >
+            {% csrf_token %}
+            <div class="u-form-group u-form-name u-label-top">
+              <label for="name-558c" class="u-label u-text-grey-10 u-label-1">Debit / Credit Card Number</label>
+              <input type="text" placeholder="Enter the card number" id="name-558c" name="name" class="u-border-1 u-border-grey-40 u-input u-input-rectangle u-text-body-alt-color u-input-1" required="">
+            </div>
+            <div class="u-form-email u-form-group u-form-partition-factor-3 u-label-top">
+              <label for="email-558c" class="u-label u-text-grey-10 u-label-2">Card Expiry</label>
+              <input type="text" placeholder="Month " id="email-558c" name="number" class="u-border-1 u-border-grey-40 u-input u-input-rectangle u-text-body-alt-color u-input-2" required="">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-3">
+              <label for="text-4282" class="u-form-control-hidden u-label u-text-grey-10 u-label-3"></label>
+              <input type="text" placeholder="Year  " id="text-4282" name="text" class="u-border-1 u-border-grey-40 u-input u-input-rectangle u-text-body-alt-color u-input-3">
+            </div>
+            <div class="u-form-group u-form-partition-factor-3 u-label-top u-form-group-4">
+              <label for="text-2917" class="u-label u-text-grey-10 u-label-4">CVV / CVC</label>
+              <input type="text" placeholder="" id="text-2917" name="cvv" class="u-border-1 u-border-grey-40 u-input u-input-rectangle u-text-body-alt-color u-input-4">
+            </div>
+            <div class="u-form-group u-form-name u-label-top u-form-group-5">
+              <label for="name-e376" class="u-label u-text-grey-10 u-label-5">Name on card</label>
+              <input type="text" placeholder="Enter the name printed on the card" id="name-e376" name="name" class="u-border-1 u-border-grey-40 u-input u-input-rectangle u-text-body-alt-color u-input-5" required="">
+            </div>
+            <div class="u-align-center u-form-group u-form-submit">
+
+              <input type="submit" value="Pay {{symbol}} {{fare}}" class="u-border-2 u-border-grey-10 u-btn u-btn-submit u-button-style u-hover-grey-30 u-none u-btn-1">
+            </div>
+
+
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-7de8"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Trouvaille Inc. <br> Copyright 2022.  All Rights Reserved<br>
+          <br>
+        </p>
+      </div></footer>
+    
+  </body>
+</html>

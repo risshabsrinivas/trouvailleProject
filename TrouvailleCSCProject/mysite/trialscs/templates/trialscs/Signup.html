@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+      {%load static%}<link rel="shortcut icon" href="{% static '/trialscs/images/logo.png'%}" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Trouvaille | Signup</title>
+    {%load static %}<link rel="stylesheet" href="{% static '/trialscs/nicepage.css'%}" media="screen">
+    {%load static %}<link rel="stylesheet" href="{% static '/trialscs/Signup.css'%}" media="screen">
+   {%load static %} <script class="u-script" type="text/javascript" src="{% static '/trialscs/jquery-1.9.1.min.js'%}" defer=""></script>
+   {%load static %} <script class="u-script" type="text/javascript" src="{% static '/trialscs/nicepage.js'%}" defer=""></script>
+    <meta name="generator" content="Nicepage 4.10.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "WebSite1975972"
+}</script>
+    <meta name="theme-color" content="#4d6eaa">
+    <meta property="og:title" content="Signup">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode">
+  {%load static %}  <section class="u-clearfix u-image u-section-1" id="sec-938c" data-image-width="1280" data-image-height="853">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-body-alt-color u-title u-text-1">Signup</h1>
+        <div class="u-form u-form-1">
+        <!--  <form action="//publish.nicepage.com/Form/Process" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+            <input type="hidden" id="siteId" name="siteId" value="1975972">
+            <input type="hidden" id="pageId" name="pageId" value="1975980">
+            <div class="u-form-group u-form-name">
+              <label for="name-b876" class="u-custom-font u-font-merriweather u-label u-text-body-alt-color u-label-1">Name</label>
+              <input type="text" placeholder="Enter your Name" id="name-b876" name="name" class="u-input u-input-rectangle u-text-black u-white u-input-1" required="">
+            </div>
+            <div class="u-form-group u-form-group-2">
+              <label for="text-53cd" class="u-custom-font u-font-merriweather u-label u-text-body-alt-color u-label-2">Password</label>
+              <input type="text" placeholder="Set your password" id="text-53cd" name="text" class="u-input u-input-rectangle u-text-black u-white u-input-2" required="required">
+            </div>
+            <div class="u-form-email u-form-group">
+              <label for="email-b876" class="u-custom-font u-font-merriweather u-label u-text-body-alt-color u-label-3">Email</label>
+              <input type="email" placeholder="Enter a valid email address" id="email-b876" name="email" class="u-input u-input-rectangle u-text-black u-white u-input-3" required="" idenati-clicked="true">
+            </div>
+            <div class="u-form-agree u-form-group u-form-group-4">
+              <input type="checkbox" id="agree-5ef4" name="agree" class="u-agree-checkbox" required="">
+              <label for="agree-5ef4" class="u-custom-font u-font-merriweather u-label u-text-body-alt-color u-label-4">Confirm to signup</label>
+            </div>
+            <div class="u-align-center u-form-group u-form-submit">
+              <a href="#" class="u-border-2 u-border-hover-white u-border-palette-1-base u-btn u-btn-submit u-button-style u-text-hover-white u-text-white u-btn-2">Submit</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+          </form>-->
+          <form action="signup/verification" method="post">
+            {% csrf_token %}
+            <label for="name-b876" class="u-custom-font u-font-merriweather u-label u-text-body-alt-color u-label-1">Name</label>
+            <input type="text" placeholder="Enter your Name" id="name-b876" name="name" class="u-input u-input-rectangle u-text-black u-white u-input-1" required="">
+
+            <label for="email-b876" class="u-custom-font u-font-merriweather u-label u-text-body-alt-color u-label-3">Email</label>
+              <input type="email" placeholder="Enter a valid email address" id="email-b876" name="mail" class="u-input u-input-rectangle u-text-black u-white u-input-3" required="" idenati-clicked="true">
+
+            <label for="text-53cd" class="u-custom-font u-font-merriweather u-label u-text-body-alt-color u-label-2">Password</label>
+              <input type="text" placeholder="Set your Password" id="text-53cd" name="password" class="u-input u-input-rectangle u-text-black u-white u-input-2" required="required">
+
+            <input type="submit" value="Submit" class="u-border-2 u-border-hover-white u-border-palette-1-base u-btn u-btn-submit u-button-style u-text-hover-white u-text-white u-btn-2">
+        </form>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-bcf8"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Trouvaille Inc.&nbsp;<br> Copyright 2022.&nbsp;&nbsp;All Rights Reserved.<br>
+          <br>
+        </p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section>
+  </body>
+</html>

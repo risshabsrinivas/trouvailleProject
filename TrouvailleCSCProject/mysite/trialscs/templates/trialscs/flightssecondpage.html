@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    {%load static%}<link rel="shortcut icon" href="{% static '/trialscs/images/logo.png'%}" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Select your departure flight from Delhi to New YorkThu,19 May 2022">
+    <meta name="description" content="">
+    <title>{{dep}}-{{ar}} | Trouvaille</title>
+
+    {% load static %}<link rel="stylesheet" href="{% static '/trialscs/fsp1.css'%}" media="screen">
+    {% load static %}<link rel="stylesheet" href="{% static '/trialscs/nicepage111.css'%}" media="screen">
+    {% load static %}<link rel="stylesheet" href="{% static '/trialscs/jquery1.js'%}" media="screen">
+
+
+   {% load static %} <script class="u-script" type="text/javascript" src="{% static '/trialscs/jquery-1.9.1.min.js'%}" defer=""></script>
+   {% load static %} <script class="u-script" type="text/javascript" src="{% static '/trialscs/nicepage.js'%}" defer=""></script>
+    <meta name="generator" content="Nicepage 4.11.3, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i">
+ <style>
+  label {
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+label:hover {
+  filter: grayscale(0);
+}
+input[type="radio"]:checked + label {
+  filter: grayscale(0);
+}</style>
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}
+    </script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Flights second page">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode">
+    <section class="u-clearfix u-image u-section-1" id="sec-fa70" data-image-width="150" data-image-height="98">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-border-2 u-border-grey-dark-1 u-shape u-shape-rectangle u-white u-shape-1" data-animation-name="customAnimationIn" data-animation-duration="1000"></div>
+        <p class="u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000">{{dep}}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{ar}}</p><span class="u-file-icon u-icon u-icon-1" data-animation-name="customAnimationIn" data-animation-duration="1000">{% load static %}<img src="{% static '/trialscs/images/834022.png' %}" alt=""></span>
+        <div class="u-shape u-shape-rectangle u-white u-shape-2" data-animation-name="customAnimationIn" data-animation-duration="1000"></div>
+        <p class="u-text u-text-default u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <span style="font-size: 20px;">Class : {{cc}}</span>
+        </p>
+        <div class="u-border-2 u-border-grey-dark-1 u-shape u-shape-rectangle u-white u-shape-3" data-animation-name="customAnimationIn" data-animation-duration="1000"></div><span class="u-file-icon u-icon u-icon-2" data-animation-name="customAnimationIn" data-animation-duration="1000">{% load static %}<img src="{% static '/trialscs/images/615075.png' %}" alt=""></span>
+        <p class="u-text u-text-default u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <span style="font-weight: 700; font-size: 1.25rem;">{{nop}} Passenger(s</span>
+          <span style="font-weight: 700; font-size: 1.25rem;">)<span style="font-weight: 700;"></span>
+          </span>
+        </p>
+        <h1 class="u-align-center u-custom-font u-font-merriweather u-text u-text-4" data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <span class="u-text-white">Select your departure flight from {{placeofdep}} to {{placeofar}}</span>
+          <br>
+          <span class="u-text-body-alt-color" style="font-size: 1.5rem;">{{date}}</span>
+          <span style="font-size: 1.5rem;">&nbsp;</span>
+        </h1>
+        {% for x in lst %}
+        <div class="u-expanded-width u-radius-15 u-shape u-shape-round u-white u-shape-4" data-animation-name="customAnimationIn" data-animation-duration="1000"></div>
+        <p class="u-align-center u-text u-text-5" data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <span style="font-size: 2rem;">{{x.timeofDept}} {{dep}}</span>
+          <br>
+          <span style="font-size: 1.5rem; font-weight: 700;">{{placeofdep}}</span>
+          <br>
+          <span style="font-size: 0.9rem;">Operated by:{{x.airname}}<br>{{x.dateodept}}&nbsp;&nbsp;
+          </span>
+        </p>
+        &#160;&#160;<p class="u-align-center u-text u-text-6" data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <span style="font-size: 2rem;">{{x.timeofar}} {{ar}}</span>
+          <br>
+          <span style="font-size: 24px;"><b>{{placeofar}}<span class="u-text-body-alt-color"></span></b>
+          </span>
+          <br>
+          <span style="font-size: 1rem;">{{x.aircraft}}<br>
+          </span>
+        </p>
+       &#160;&#160; <div class="u-border-2 u-border-palette-5-base u-container-style u-group u-radius-10 u-shape-round u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <p class="u-text u-text-default u-text-7" data-animation-name="pulse" data-animation-duration="1000" data-animation-direction="">
+              <span style="font-size: 1.25rem; font-weight: 700;">&#160;&#160;{{cc}} from</span>
+              <br>
+            </p>
+            <div class="u-border-3 u-border-palette-5-base u-shape u-shape-rectangle u-white u-shape-5"></div>
+            <p class="u-align-center u-text u-text-8" data-animation-name="pulse" data-animation-duration="1000" data-animation-direction="">{{x.symbol}}{{x.fare}}</p>
+            <p class="u-align-center u-text u-text-9">Total price for all passengers.</p>
+          </div>
+        </div><span class="u-file-icon u-icon u-text-grey-50 u-icon-3" data-animation-name="customAnimationIn" data-animation-duration="1000">{% load static %}<img src="{% static '/trialscs/images/13.png' %}" alt=""></span>
+        <p class="u-text u-text-default u-text-10" data-animation-name="customAnimationIn" data-animation-duration="1000">{{x.Tdur}}<br>{{x.conf}} Stop(s)<br>{% if x.conf == 1 %} Via :{{x.mid}} {% elif x.conf == 2 %} Via :{{x.mid}} {% endif %}<span style="font-size: 0.5rem;"></span>
+        </p>
+        <form action="results/choice" method="post" id="form1">
+          {% csrf_token %}
+          <button type="submit" form="form1" value="{{x.id}}" name="hello" class="u-border-2 u-border-black u-btn u-button-style u-hover-black u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1000">Book Flight</button>
+        <!--  <a href="results/choice" class="u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1000">Book this flight</a>-->
+       </form>
+          {% endfor %}
+        <div class="u-border-none u-btn u-btn-round u-button-style u-hover-black u-radius-6 u-text-hover-white u-white u-btn-2" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="">Showing 10 out of {{tf}} flights</div>
+      </div>
+    </section>
+
+
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-7de8"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Trouvaille Inc. <br> &#169; Copyright 2022.  All Rights Reserved<br>
+          <br>
+        </p>
+      </div></footer>
+
+<!--  <input type="radio" id="1" name="fav_language" value="1">
+  <label for="1"><a  href='' class="u-border-none u-btn u-btn-round u-button-style u-hover-grey-40 u-radius-6 u-text-body-alt-color u-text-hover-grey-40 u-white u-btn-1"></a>
+            <p class="u-align-center u-text u-text-5" data-animation-name="customAnimationIn" data-animation-duration="1000">
+              <span style="font-size: 2.25rem;">22:00 {{dep}}</span>
+              <br>
+              <span style="font-size: 1.5rem; font-weight: 700;">Delhi</span>
+              <br>
+              <span style="font-size: 1.25rem;">QR 4781 Airbus A320<br>Operated by: Indigo
+              </span>
+            </p>
+            <p class="u-align-center u-text u-text-6" data-animation-name="customAnimationIn" data-animation-duration="1000">
+              <span style="font-size: 36px;">09:00 {{ar}}</span>
+              <br>
+              <span style="font-size: 24px;"><b>New York<span class="u-text-body-alt-color"></span></b>
+              </span>
+              <br>
+              <span style="font-size: 1.25rem;">QR 0703 Boeing 777-300 ER<br>Operated by: Qatar Airways
+              </span>
+            </p>
+            <div class="u-border-2 u-border-palette-5-base u-container-style u-group u-radius-10 u-shape-round u-group-1">
+              <div class="u-container-layout u-container-layout-1">
+                <p class="u-text u-text-default u-text-7" data-animation-name="pulse" data-animation-duration="1000" data-animation-direction="">
+                  <span style="font-size: 1.25rem; font-weight: 700;">Economy from</span>
+                  <br>
+                </p>
+                <div class="u-border-3 u-border-palette-5-base u-shape u-shape-rectangle u-white u-shape-4"></div>
+                <p class="u-align-center u-text u-text-8" data-animation-name="pulse" data-animation-duration="1000" data-animation-direction="">223691 INR</p>
+                <p class="u-align-center u-text u-text-9">Total price for all passengers.</p>
+              </div>
+            </div><span class="u-file-icon u-icon u-text-grey-50 u-icon-3" data-animation-name="customAnimationIn" data-animation-duration="1000">{% load static %}  <img src="{% static '/trialscs/images/13.png'%}" alt=""></span>
+            <p class="u-text u-text-default u-text-10" data-animation-name="customAnimationIn" data-animation-duration="1000">20h 30m<br>1 Stop(s)<span style="font-weight: 700;"></span>
+            </p></label>
+
+            <a href="https://nicepage.com/c/blog-posts-website-mockup" class="u-border-none u-btn u-btn-round u-button-style u-hover-black u-radius-6 u-text-hover-white u-white u-btn-2" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="">Showing 5 out of 6 flights (Click here to view more options)</a>
+          </div>
+         </section> -->
+
+  </body>
+</html>

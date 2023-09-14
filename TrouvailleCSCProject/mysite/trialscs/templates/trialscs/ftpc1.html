@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    {%load static%}<link rel="shortcut icon" href="{% static '/trialscs/images/logo.png'%}" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Passenger Details, Passenger 1 (Adult)">
+    <meta name="description" content="">
+    <title>Passenger Details</title>
+   {% load static %}<link rel="stylesheet" href="{% static '/trialscs/nicepages.css'%}" media="screen">
+    {% load static %}<link rel="stylesheet" href="{% static '/trialscs/ftpc1.css'%}" media="screen">
+   {% load static %} <script class="u-script" type="text/javascript" src="{% static '/trialscs/jquery-1.9.1.min.js'%}" defer=""></script>
+   {% load static %} <script class="u-script" type="text/javascript" src="{% static '/trialscs/nicepage.js'%}" defer=""></script>
+
+    <meta name="generator" content="Nicepage 4.11.3, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Flights third page">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode">
+    <section class="u-clearfix u-image u-section-1" id="sec-813e" data-image-width="150" data-image-height="100">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-align-center u-custom-font u-font-merriweather u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000">Passenger Details</h1>
+        <div class="u-grey-10 u-radius-30 u-shape u-shape-round u-shape-1" data-animation-name="customAnimationIn" data-animation-duration="1000"></div>
+        <div class="u-form u-form-1">
+          <form action="choice/payment" method="post"  style="padding: 15px;">
+            {% csrf_token %}
+
+            <div class="u-form-group u-form-name u-label-none">
+              <label for="name-ef64" class="u-label">Name</label>
+              <input type="text" placeholder="First Name / Middle Name" id="name-ef64" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-input-1" required="">
+            </div>
+            <div class="u-form-email u-form-group u-label-none">
+              <label for="email-ef64" class="u-label">Email</label>
+              <input type="email" placeholder="Last Name" id="email-ef64" name="name-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-input-2" required="">
+            </div>
+            <div class="u-form-group u-label-none u-form-group-3">
+              <label for="text-0d8c" class="u-label">Input</label>
+              <input type="text" placeholder="Date of birth    DD/MM/YYYY" id="text-0d8c" name="text" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-input-3">
+            </div>
+            <div class="u-form-group u-label-none u-form-group-4">
+              <label for="text-1203" class="u-label">Input</label>
+              <input type="text" placeholder="Nationality" id="text-1203" name="text-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-input-4">
+            </div>
+            <div class="u-form-group u-label-none u-form-group-5">
+              <label for="text-a5f2" class="u-label">Input</label>
+              <input type="text" placeholder=" Contact Number [Starting with the country phone code]" id="text-a5f2" name="text-2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-input-5">
+            </div>
+            <div class="u-form-group u-label-none u-form-group-6">
+              <label for="text-d99b" class="u-label">Input</label>
+              <input type="text" placeholder="E-mail" id="text-d99b" name="text-3" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-input-6">
+            </div>
+            <div class="u-form-group u-label-none u-form-group-7">
+              <label for="text-ab53" class="u-label">Input</label>
+              <input type="text" placeholder="Passport Number" id="text-ab53" name="text-4" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-input-7">
+            </div>
+            <div class="u-form-group u-label-none u-form-group-8">
+              <label for="text-4830" class="u-label">Input</label>
+              <input type="text" id="text-4830" name="text-5" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-input-8" placeholder="Passport Expiry Number  DD/MM/YYYY">
+            </div>
+
+              <input type="submit" value="Confirm" class="u-border-none u-btn u-btn-submit u-button-style u-grey-40 u-hover-palette-2-light-1 u-btn-1">
+
+          </form>
+        </div>
+        <h2 class="u-align-left u-custom-font u-font-merriweather u-text u-text-default u-text-2">&#160;&#160;&#160;&#160;&#160;</h2>
+        <div class="u-border-3 u-border-grey-10 u-grey-10 u-preserve-proportions u-radius-25 u-shape u-shape-round u-shape-2" data-animation-name="customAnimationIn" data-animation-duration="1000"></div>
+        <p class="u-align-center u-text u-text-default u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <span style="font-size: 1.5rem; font-weight: 700;">Your Trip Summ</span>
+          <span style="font-size: 1.5rem; font-weight: 700;">ary</span>
+        </p>
+        <div class="u-border-3 u-border-grey-50 u-line u-line-horizontal u-line-1"></div>
+        <p class="u-align-center u-text u-text-default u-text-4" data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <span style="font-size: 1.25rem;">Outbound Fligh</span>
+          <span style="font-size: 1.25rem;">t</span>
+          <br>
+        </p>
+        <p class="u-align-left u-text u-text-default u-text-5" data-animation-name="customAnimationIn" data-animation-duration="1000">{{T1}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>{{t1}}<br>{{dep}}
+        </p>
+        <p class="u-align-right u-text u-text-default u-text-6" data-animation-name="customAnimationIn" data-animation-duration="1000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{T2}}<br>{{t2}}<br>{{mid}}
+        </p>
+        <p class="u-align-left u-text u-text-default u-text-7" data-animation-name="customAnimationIn" data-animation-duration="1000">{{airname}}</p>
+        <div class="u-border-3 u-border-grey-75 u-grey-10 u-shape u-shape-circle u-shape-3" data-animation-name="customAnimationIn" data-animation-duration="1000"></div>
+        <div class="u-border-3 u-border-grey-75 u-palette-5-light-2 u-shape u-shape-circle u-shape-4" data-animation-name="customAnimationIn" data-animation-duration="1000"></div>
+        <p class="u-align-left u-text u-text-default u-text-8" data-animation-name="customAnimationIn" data-animation-duration="1000">{{dur1}}<span style="font-weight: 700;"></span>
+        </p>
+        <p class="u-align-left u-text u-text-default u-text-9" data-animation-name="customAnimationIn" data-animation-duration="1000">{{T3}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>{{t3}}<br>{{mid}}
+        </p>
+        <p class="u-align-right u-text u-text-default u-text-10" data-animation-name="customAnimationIn" data-animation-duration="1000">{{T4}}<br>{{t4}}<br>{{arr}}
+        </p>
+        <p class="u-align-left u-text u-text-default u-text-11" data-animation-name="customAnimationIn" data-animation-duration="1000">{{airname}}</p>
+        <div class="u-border-3 u-border-grey-dark-1 u-line u-line-horizontal u-line-2" data-animation-name="customAnimationIn" data-animation-duration="1000"></div>
+        <div class="u-border-3 u-border-grey-75 u-palette-5-light-2 u-shape u-shape-circle u-shape-5" data-animation-name="customAnimationIn" data-animation-duration="1000"></div>
+        <div class="u-border-3 u-border-grey-75 u-palette-5-light-2 u-shape u-shape-circle u-shape-6" data-animation-name="customAnimationIn" data-animation-duration="1000"></div>
+        <p class="u-align-left u-text u-text-default u-text-12" data-animation-name="customAnimationIn" data-animation-duration="1000">{{dur2}}<span style="font-weight: 700;"></span>
+        </p>
+        <div class="u-border-3 u-border-grey-50 u-line u-line-horizontal u-line-3"></div>
+        <p class="u-align-left u-text u-text-default u-text-13" data-animation-name="customAnimationIn" data-animation-duration="1000">Total trip price:<br>&nbsp; &nbsp; &nbsp;(Taxes Incl.)<span style="font-weight: 700;"></span>
+        </p>
+        <p class="u-align-left u-text u-text-default u-text-14" data-animation-name="customAnimationIn" data-animation-duration="1000">{{symbol}} {{fare}}</p>
+        <div class="u-border-3 u-border-grey-dark-1 u-line u-line-horizontal u-line-4" data-animation-name="customAnimationIn" data-animation-duration="1000"></div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-7de8"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Trouvaille Inc. <br> &#169; Copyright 2022.  All Rights Reserved<br>
+          <br>
+        </p>
+      </div></footer>
+
+  </body>
+</html>
