@@ -73,7 +73,7 @@ def verification(request):
         name=request.POST['name']
         password=request.POST['password']
         OTP=random.randint(100000,999999)
-        yag = yagmail.SMTP('trouvaille.cscproject@gmail.com','urrjdcmqpuynrpmo')
+        yag = yagmail.SMTP('trouvaille.cscproject@gmail.com',"password")
         yag.send(mailID, subject='Verification Code', contents=email_msg1 + str(OTP) + email_msg2)
         reqDict={'mail':mailID}
         return render(request,'trialscs/verification.html',reqDict)
