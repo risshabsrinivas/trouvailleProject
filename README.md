@@ -1,9 +1,86 @@
-# Trouvaille Travel Portal
+Trouvaille Travel Portal
+![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
-Trouvaille Inc. operates as a versatile travel portal, meticulously constructed on the bedrock of Python and Django, supported by SQL (SQLite), HTML, and CSS. With a robust flight booking system firmly established, it's in the midst of developing its car rental and hotel booking features.
 
-Incorporating a pragmatic approach, Trouvaille Inc. offers customers an uncluttered interface, devoid of superficial adornments but brimming with functionality. Its flight booking system, a shining example of algorithmic prowess, deftly accesses disparate data sources and seamlessly presents users with an array of flight options. User experiences are streamlined, while the complexity of data integration remains shrouded.
+## Tech Stack
 
-The hotel and car rental features, while currently in development, exhibit a hidden potential. Underneath the surface, data schemas and APIs quietly evolve, preparing to offer customers an extensive selection of accommodations and vehicles. Trouvaille Inc. takes pride in its utilization of SQL (SQLite) for efficient data management, HTML for structuring content, and CSS for subtle styling enhancements.
+**Client:** HTML, CSS, JavaScript
 
-This travel portal's true strength lies in its discreet technical acumen. It thrives on the precision of code, the meticulousness of data processing, and the subtlety of user interactions. Trouvaille Inc. endeavors to create an ecosystem where the technical complexities are concealed, and users navigate effortlessly through a world of travel possibilities.
+**Server:** Django, Python, MySQL
+
+
+## Installation - Pre Requisites
+
+Install my-project with npm
+Download SQLite
+```bash
+  npm install my-project
+  pip3 install mysqlconnector
+```
+    
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/risshabsrinivas/trouvailleProject
+```
+
+Go to the project directory
+
+```bash
+  cd mysite
+```
+
+Install dependencies
+
+```bash
+  pip3 install django
+```
+
+Start the server
+
+```bash
+  python3 manage.py runserver
+```
+
+
+## API Reference
+
+#### Get all items
+
+```http
+  GET /api/items
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
+
+#### Get item
+
+```http
+  GET /api/items/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+#### add(num1, num2)
+
+Takes two numbers and returns the sum.
+
+
+## Documentation
+
+[Documentation](https://linktodocumentation)
+
+
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
+
